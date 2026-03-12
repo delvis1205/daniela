@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACD">
+
+    <TextView
+        android:id="@+id/tv_cozinha_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cozinha da Daniela"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/food_display"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cake"
+        app:layout_constraintTop_toBottomOf="@id/tv_cozinha_titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:id="@+id/btn_make_cake"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cake"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageButton
+            android:id="@+id/btn_make_burger"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hamburger"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+        <ImageButton
+            android:id="@+id/btn_make_juice"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/juice"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_voltar_cozinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
